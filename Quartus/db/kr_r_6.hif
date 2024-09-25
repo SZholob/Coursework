@@ -1,0 +1,199 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+936
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+RS_trig
+# storage
+db|kr_r_6.(2).cnf
+db|kr_r_6.(2).cnf
+# case_insensitive
+# source_file
+rs_trig.bdf
+f8c8eaed27ecfc808bb0f17795bfd19b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+cycle_1:inst3|rs_trig:inst
+cycle_1:inst3|rs_trig:inst12
+cycle_1:inst3|rs_trig:inst13
+cycle_1:inst3|rs_trig:inst14
+cycle_3:inst1|rs_trig:inst15
+cycle_3:inst1|rs_trig:inst
+cycle_3:inst1|rs_trig:inst13
+cycle_3:inst1|rs_trig:inst14
+cycle_2:inst4|rs_trig:inst
+cycle_2:inst4|rs_trig:inst13
+cycle_2:inst4|rs_trig:inst14
+cycle_2:inst4|rs_trig:inst15
+auto_table:inst5|rs_trig:inst
+auto_table:inst5|rs_trig:inst10
+auto_table:inst5|rs_trig:inst11
+manual_table:inst|rs_trig:inst
+manual_table:inst|rs_trig:inst6
+}
+# macro_sequence
+
+# end
+# entity
+cycle_1
+# storage
+db|kr_r_6.(1).cnf
+db|kr_r_6.(1).cnf
+# case_insensitive
+# source_file
+cycle_1.bdf
+9b97bc17c9fa137798d2d357d12e9f9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+cycle_1:inst3
+}
+# macro_sequence
+
+# end
+# entity
+manual_mode
+# storage
+db|kr_r_6.(4).cnf
+db|kr_r_6.(4).cnf
+# case_insensitive
+# source_file
+manual_mode.bdf
+a4faeae12f72b220bafdf827112c6c4b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+manual_mode:inst2
+}
+# macro_sequence
+
+# end
+# entity
+manual_table
+# storage
+db|kr_r_6.(7).cnf
+db|kr_r_6.(7).cnf
+# case_insensitive
+# source_file
+manual_table.bdf
+a823c0b043f2c36c4b2dba12c8544c86
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+manual_table:inst
+}
+# macro_sequence
+
+# end
+# entity
+cycle_3
+# storage
+db|kr_r_6.(3).cnf
+db|kr_r_6.(3).cnf
+# case_insensitive
+# source_file
+cycle_3.bdf
+6eba6573408fab5ae8d3e58332c4085
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+cycle_3:inst1
+}
+# macro_sequence
+
+# end
+# entity
+kr_r_6
+# storage
+db|kr_r_6.(0).cnf
+db|kr_r_6.(0).cnf
+# case_insensitive
+# source_file
+kr_r_6.bdf
+922149b6a74c099a9db8f1d4fbe447e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+auto_table
+# storage
+db|kr_r_6.(6).cnf
+db|kr_r_6.(6).cnf
+# case_insensitive
+# source_file
+auto_table.bdf
+d94ad436c7194e1f56d71d5a1276e5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+auto_table:inst5
+}
+# macro_sequence
+
+# end
+# entity
+cycle_2
+# storage
+db|kr_r_6.(5).cnf
+db|kr_r_6.(5).cnf
+# case_insensitive
+# source_file
+cycle_2.bdf
+d7accf5d80fb939bf4fbea423d8841f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+cycle_2:inst4
+}
+# macro_sequence
+
+# end
+# complete
+

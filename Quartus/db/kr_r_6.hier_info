@@ -1,0 +1,365 @@
+|kr_r_6
+em_1 <= inst17.DB_MAX_OUTPUT_PORT_TYPE
+START => cycle_1:inst3.START
+START => cycle_3:inst1.START
+START => cycle_2:inst4.START
+START => auto_table:inst5.START
+STOP => cycle_1:inst3.STOP
+STOP => cycle_3:inst1.STOP
+STOP => cycle_2:inst4.STOP
+STOP => auto_table:inst5.STOP
+STOP => manual_table:inst.STOP
+ALL_RESET => cycle_1:inst3.ALL_RESET
+ALL_RESET => cycle_3:inst1.ALL_RESET
+ALL_RESET => cycle_2:inst4.ALL_RESET
+ALL_RESET => auto_table:inst5.ALL_RESET
+ALL_RESET => manual_table:inst.ALL_RESET
+auto_mode => cycle_1:inst3.auto_mode
+auto_mode => cycle_3:inst1.auto_mode
+auto_mode => cycle_2:inst4.auto_mode
+auto_mode => auto_table:inst5.auto_mode
+semi_mode => cycle_1:inst3.semi_mode
+semi_mode => cycle_3:inst1.semi_mode
+semi_mode => cycle_2:inst4.semi_mode
+semi_mode => auto_table:inst5.semi_mode
+cycle_1 => cycle_1:inst3.cycle_1
+sq_1 => cycle_1:inst3.sq_1
+sq_1 => cycle_3:inst1.sq_1
+sq_1 => cycle_2:inst4.sq_1
+sq_1 => auto_table:inst5.sq_1
+sq_2 => cycle_1:inst3.sq_2
+sq_2 => cycle_3:inst1.sq_2
+sq_2 => cycle_2:inst4.sq_2
+sq_3 => cycle_1:inst3.sq_3
+sq_3 => cycle_3:inst1.sq_3
+sq_3 => cycle_2:inst4.sq_3
+sq_4 => cycle_1:inst3.sq_4
+sq_4 => cycle_3:inst1.sq_4
+sq_4 => cycle_2:inst4.sq_4
+sq_5 => cycle_1:inst3.sq_5
+sq_5 => cycle_3:inst1.sq_5
+rt_relay => cycle_1:inst3.rt_relay
+rt_relay => cycle_3:inst1.rt_relay
+rt_relay => cycle_2:inst4.rt_relay
+rt_relay => auto_table:inst5.rt_relay
+rt_relay => manual_table:inst.rt_relay
+rt_press => cycle_1:inst3.rt_press
+rt_press => cycle_3:inst1.rt_press
+rt_press => cycle_2:inst4.rt_press
+rt_press => auto_table:inst5.rt_press
+t1 => cycle_1:inst3.t1
+cycle_3 => cycle_3:inst1.cycle_3
+sq_6 => cycle_3:inst1.sq_6
+manual_mode => manual_mode:inst2.manual_mode
+manual_mode => manual_table:inst.manual_mode
+fast_supply => manual_mode:inst2.fast_supply
+feeding_1 => manual_mode:inst2.feeding_1
+feeding_2 => manual_mode:inst2.feeding_2
+feeding_back => manual_mode:inst2.feeding_back
+fast_pullback => manual_mode:inst2.fast_pullback
+cycle_2 => cycle_2:inst4.cycle_2
+t2 => cycle_2:inst4.t2
+em_2 <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+em_3 <= inst19.DB_MAX_OUTPUT_PORT_TYPE
+M1 <= inst14.DB_MAX_OUTPUT_PORT_TYPE
+rt_m1 => auto_table:inst5.rt_m1
+rt_m1 => manual_table:inst.rt_m1
+rotate_table => manual_table:inst.rotate_table
+M2 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+P1m <= auto_table:inst5.P1m
+P2m <= auto_table:inst5.P2m
+P3m <= auto_table:inst5.P3m
+
+
+|kr_r_6|cycle_1:inst3
+em_1 <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+sq_1 => inst15.IN0
+sq_1 => inst32.IN2
+sq_1 => inst36.IN0
+sq_1 => inst23.IN0
+sq_1 => inst31.IN0
+sq_1 => inst56.IN1
+sq_3 => inst19.IN0
+sq_3 => inst24.IN0
+sq_3 => inst18.IN0
+sq_5 => inst33.IN0
+cycle_1 => inst32.IN0
+rt_press => inst32.IN1
+rt_relay => inst32.IN3
+ALL_RESET => inst35.IN0
+ALL_RESET => inst26.IN4
+ALL_RESET => inst26.IN5
+ALL_RESET => inst55.IN3
+ALL_RESET => inst17.IN0
+sq_4 => inst25.IN0
+semi_mode => inst22.IN0
+semi_mode => inst30.IN1
+auto_mode => inst22.IN1
+auto_mode => inst56.IN2
+START => inst23.IN2
+sq_2 => inst27.IN0
+sq_2 => inst28.IN0
+sq_2 => inst54.IN0
+STOP => inst29.IN0
+STOP => inst30.IN0
+t1 => inst16.IN0
+em_2 <= inst43.DB_MAX_OUTPUT_PORT_TYPE
+em_3 <= inst49.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|cycle_1:inst3|RS_trig:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|cycle_1:inst3|RS_trig:inst12
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|cycle_1:inst3|RS_trig:inst13
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|cycle_1:inst3|RS_trig:inst14
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|cycle_3:inst1
+em1 <= inst47.DB_MAX_OUTPUT_PORT_TYPE
+P34 <= RS_trig:inst15.Q
+sq_5 => inst39.IN0
+sq_5 => inst41.IN0
+P31 <= RS_trig:inst.Q
+sq_4 => inst16.IN0
+P32 <= RS_trig:inst13.Q
+sq_2 => inst20.IN0
+sq_2 => inst27.IN0
+sq_2 => inst32.IN0
+sq_3 => inst28.IN0
+sq_3 => inst19.IN0
+sq_3 => inst40.IN0
+sq_1 => inst26.IN0
+sq_1 => inst33.IN0
+sq_1 => inst34.IN1
+sq_1 => inst25.IN1
+sq_1 => inst24.IN0
+sq_1 => inst38.IN2
+semi_mode => inst29.IN0
+semi_mode => inst36.IN1
+auto_mode => inst29.IN1
+auto_mode => inst25.IN2
+START => inst26.IN2
+STOP => inst30.IN0
+STOP => inst36.IN0
+ALL_RESET => inst35.IN4
+ALL_RESET => inst35.IN5
+ALL_RESET => inst22.IN2
+ALL_RESET => inst18.IN0
+ALL_RESET => inst42.IN1
+P33 <= RS_trig:inst14.Q
+sq_6 => inst17.IN0
+cycle_3 => inst38.IN0
+rt_press => inst38.IN1
+rt_relay => inst38.IN3
+em2 <= inst48.DB_MAX_OUTPUT_PORT_TYPE
+em3 <= inst55.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|cycle_3:inst1|RS_trig:inst15
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|cycle_3:inst1|RS_trig:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|cycle_3:inst1|RS_trig:inst13
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|cycle_3:inst1|RS_trig:inst14
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|manual_mode:inst2
+em_1 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+feeding_1 => inst10.IN0
+feeding_1 => inst11.IN3
+feeding_2 => inst10.IN1
+fast_supply => inst10.IN2
+fast_supply => inst11.IN0
+fast_supply => inst12.IN1
+manual_mode => inst.IN1
+manual_mode => inst8.IN1
+manual_mode => inst9.IN1
+em_2 <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+feeding_back => inst11.IN1
+fast_pullback => inst11.IN2
+fast_pullback => inst12.IN0
+em_3 <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|cycle_2:inst4
+em_1 <= inst45.DB_MAX_OUTPUT_PORT_TYPE
+sq_4 => inst16.IN0
+sq_4 => inst40.IN0
+sq_3 => inst20.IN0
+sq_3 => inst19.IN0
+sq_3 => inst22.IN0
+sq_3 => inst17.IN0
+sq_1 => inst28.IN0
+sq_1 => inst37.IN3
+sq_1 => inst29.IN0
+sq_1 => inst26.IN2
+sq_1 => inst33.IN2
+sq_1 => inst24.IN1
+sq_2 => inst38.IN0
+sq_2 => inst41.IN0
+sq_2 => inst35.IN0
+cycle_2 => inst37.IN0
+rt_relay => inst37.IN1
+rt_press => inst37.IN2
+ALL_RESET => inst42.IN1
+ALL_RESET => inst31.IN4
+ALL_RESET => inst31.IN5
+ALL_RESET => inst23.IN2
+ALL_RESET => inst18.IN0
+START => inst26.IN0
+semi_mode => inst27.IN0
+semi_mode => inst36.IN1
+auto_mode => inst27.IN1
+auto_mode => inst24.IN0
+auto_mode => inst24.IN2
+STOP => inst32.IN0
+STOP => inst36.IN0
+t2 => inst34.IN1
+t2 => inst34.IN2
+em_2 <= inst46.DB_MAX_OUTPUT_PORT_TYPE
+em_3 <= inst55.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|cycle_2:inst4|RS_trig:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|cycle_2:inst4|RS_trig:inst13
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|cycle_2:inst4|RS_trig:inst14
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|cycle_2:inst4|RS_trig:inst15
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|auto_table:inst5
+M1 <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+P1m <= RS_trig:inst.Q
+P3m <= RS_trig:inst11.Q
+rt_press => inst26.IN0
+rt_press => inst23.IN1
+rt_relay => inst25.IN0
+rt_relay => inst29.IN0
+P2m <= RS_trig:inst10.Q
+sq_1 => inst27.IN3
+sq_1 => inst21.IN0
+ALL_RESET => inst30.IN0
+ALL_RESET => inst24.IN2
+ALL_RESET => inst16.IN1
+auto_mode => inst19.IN0
+auto_mode => inst14.IN0
+semi_mode => inst19.IN1
+semi_mode => inst22.IN1
+START => inst21.IN3
+STOP => inst17.IN0
+STOP => inst22.IN0
+rt_m1 => inst23.IN0
+M2 <= inst34.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|auto_table:inst5|RS_trig:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|auto_table:inst5|RS_trig:inst10
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|auto_table:inst5|RS_trig:inst11
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|manual_table:inst
+M1 <= inst15.DB_MAX_OUTPUT_PORT_TYPE
+rt_m1 => inst9.IN0
+rt_m1 => inst8.IN0
+rotate_table => inst7.IN0
+rotate_table => inst11.IN1
+manual_mode => inst11.IN0
+ALL_RESET => inst12.IN0
+ALL_RESET => inst10.IN0
+STOP => inst14.IN0
+rt_relay => inst13.IN0
+M2 <= inst16.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|manual_table:inst|RS_trig:inst
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|kr_r_6|manual_table:inst|RS_trig:inst6
+Q <= inst.DB_MAX_OUTPUT_PORT_TYPE
+S => inst4.IN1
+R => inst.IN1
+Q_inv <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+

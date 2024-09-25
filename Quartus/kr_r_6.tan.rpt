@@ -1,0 +1,376 @@
+Classic Timing Analyzer report for kr_r_6
+Fri May 26 16:13:11 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Parallel Compilation
+  5. tpd
+  6. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                      ;
++------------------------------+-------+---------------+-------------+-----------+------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time ; From      ; To   ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+-------------+-----------+------+------------+----------+--------------+
+; Worst-case tpd               ; N/A   ; None          ; 44.105 ns   ; ALL_RESET ; em_1 ; --         ; --       ; 0            ;
+; Total number of failed paths ;       ;               ;             ;           ;      ;            ;          ; 0            ;
++------------------------------+-------+---------------+-------------+-----------+------+------------+----------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                                                            ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                                                               ; Setting            ; From ; To ; Entity Name ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                                                          ; EP2C8Q208C8        ;      ;    ;             ;
+; Timing Models                                                                                        ; Final              ;      ;    ;             ;
+; Default hold multicycle                                                                              ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                                                            ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                                                               ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                                                       ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                                                     ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                                                                ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                                                              ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                                                     ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                                                 ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                                                        ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                                                    ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                                                    ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node                                                ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                                                                ; 10                 ;      ;    ;             ;
+; Number of paths to report                                                                            ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                                                         ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                                                               ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                                                           ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                                                         ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis                                       ; Off                ;      ;    ;             ;
+; Reports worst-case timing paths for each clock domain and analysis                                   ; On                 ;      ;    ;             ;
+; Specifies the maximum number of worst-case timing paths to report for each clock domain and analysis ; 100                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation                                  ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                                                           ; Near End           ;      ;    ;             ;
++------------------------------------------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------+
+; tpd                                                                ;
++-------+-------------------+-----------------+---------------+------+
+; Slack ; Required P2P Time ; Actual P2P Time ; From          ; To   ;
++-------+-------------------+-----------------+---------------+------+
+; N/A   ; None              ; 44.105 ns       ; ALL_RESET     ; em_1 ;
+; N/A   ; None              ; 43.884 ns       ; sq_4          ; em_1 ;
+; N/A   ; None              ; 43.690 ns       ; sq_1          ; em_1 ;
+; N/A   ; None              ; 43.485 ns       ; sq_1          ; em_3 ;
+; N/A   ; None              ; 43.386 ns       ; sq_6          ; em_1 ;
+; N/A   ; None              ; 42.881 ns       ; semi_mode     ; em_1 ;
+; N/A   ; None              ; 42.676 ns       ; semi_mode     ; em_3 ;
+; N/A   ; None              ; 42.545 ns       ; START         ; em_1 ;
+; N/A   ; None              ; 42.340 ns       ; START         ; em_3 ;
+; N/A   ; None              ; 42.033 ns       ; auto_mode     ; em_1 ;
+; N/A   ; None              ; 41.828 ns       ; auto_mode     ; em_3 ;
+; N/A   ; None              ; 41.689 ns       ; sq_2          ; em_1 ;
+; N/A   ; None              ; 41.484 ns       ; sq_2          ; em_3 ;
+; N/A   ; None              ; 41.308 ns       ; sq_3          ; em_2 ;
+; N/A   ; None              ; 40.834 ns       ; sq_1          ; em_2 ;
+; N/A   ; None              ; 40.308 ns       ; sq_4          ; em_2 ;
+; N/A   ; None              ; 40.205 ns       ; sq_3          ; em_1 ;
+; N/A   ; None              ; 40.025 ns       ; semi_mode     ; em_2 ;
+; N/A   ; None              ; 39.986 ns       ; ALL_RESET     ; em_3 ;
+; N/A   ; None              ; 39.810 ns       ; sq_6          ; em_2 ;
+; N/A   ; None              ; 39.689 ns       ; START         ; em_2 ;
+; N/A   ; None              ; 39.665 ns       ; ALL_RESET     ; em_2 ;
+; N/A   ; None              ; 39.532 ns       ; sq_3          ; em_3 ;
+; N/A   ; None              ; 39.334 ns       ; auto_mode     ; em_2 ;
+; N/A   ; None              ; 38.854 ns       ; sq_2          ; em_2 ;
+; N/A   ; None              ; 38.538 ns       ; t1            ; em_1 ;
+; N/A   ; None              ; 38.432 ns       ; sq_4          ; em_3 ;
+; N/A   ; None              ; 38.333 ns       ; t1            ; em_3 ;
+; N/A   ; None              ; 38.180 ns       ; STOP          ; em_2 ;
+; N/A   ; None              ; 37.523 ns       ; sq_6          ; em_3 ;
+; N/A   ; None              ; 37.378 ns       ; STOP          ; em_1 ;
+; N/A   ; None              ; 37.339 ns       ; t2            ; em_2 ;
+; N/A   ; None              ; 37.252 ns       ; rt_relay      ; em_3 ;
+; N/A   ; None              ; 37.175 ns       ; rt_press      ; em_3 ;
+; N/A   ; None              ; 36.295 ns       ; STOP          ; em_3 ;
+; N/A   ; None              ; 35.829 ns       ; rt_relay      ; em_2 ;
+; N/A   ; None              ; 35.771 ns       ; t2            ; em_1 ;
+; N/A   ; None              ; 35.752 ns       ; rt_press      ; em_2 ;
+; N/A   ; None              ; 35.682 ns       ; t1            ; em_2 ;
+; N/A   ; None              ; 35.454 ns       ; t2            ; em_3 ;
+; N/A   ; None              ; 35.288 ns       ; cycle_2       ; em_3 ;
+; N/A   ; None              ; 34.901 ns       ; rt_relay      ; em_1 ;
+; N/A   ; None              ; 34.824 ns       ; rt_press      ; em_1 ;
+; N/A   ; None              ; 33.865 ns       ; cycle_2       ; em_2 ;
+; N/A   ; None              ; 33.470 ns       ; cycle_3       ; em_1 ;
+; N/A   ; None              ; 32.937 ns       ; cycle_2       ; em_1 ;
+; N/A   ; None              ; 32.876 ns       ; sq_5          ; em_1 ;
+; N/A   ; None              ; 30.597 ns       ; cycle_1       ; em_1 ;
+; N/A   ; None              ; 29.894 ns       ; cycle_3       ; em_2 ;
+; N/A   ; None              ; 29.762 ns       ; cycle_1       ; em_3 ;
+; N/A   ; None              ; 29.539 ns       ; sq_5          ; em_3 ;
+; N/A   ; None              ; 29.300 ns       ; sq_5          ; em_2 ;
+; N/A   ; None              ; 28.394 ns       ; sq_1          ; M2   ;
+; N/A   ; None              ; 27.607 ns       ; cycle_3       ; em_3 ;
+; N/A   ; None              ; 27.585 ns       ; semi_mode     ; M2   ;
+; N/A   ; None              ; 27.249 ns       ; START         ; M2   ;
+; N/A   ; None              ; 26.750 ns       ; cycle_1       ; em_2 ;
+; N/A   ; None              ; 26.737 ns       ; auto_mode     ; M2   ;
+; N/A   ; None              ; 25.757 ns       ; sq_1          ; M1   ;
+; N/A   ; None              ; 25.702 ns       ; ALL_RESET     ; M2   ;
+; N/A   ; None              ; 25.109 ns       ; STOP          ; M2   ;
+; N/A   ; None              ; 24.993 ns       ; sq_1          ; P2m  ;
+; N/A   ; None              ; 24.948 ns       ; semi_mode     ; M1   ;
+; N/A   ; None              ; 24.612 ns       ; START         ; M1   ;
+; N/A   ; None              ; 24.417 ns       ; rt_m1         ; M2   ;
+; N/A   ; None              ; 24.398 ns       ; auto_mode     ; M1   ;
+; N/A   ; None              ; 24.326 ns       ; rt_relay      ; M1   ;
+; N/A   ; None              ; 24.247 ns       ; rt_press      ; M1   ;
+; N/A   ; None              ; 24.184 ns       ; semi_mode     ; P2m  ;
+; N/A   ; None              ; 24.132 ns       ; rt_press      ; M2   ;
+; N/A   ; None              ; 23.932 ns       ; ALL_RESET     ; M1   ;
+; N/A   ; None              ; 23.848 ns       ; START         ; P2m  ;
+; N/A   ; None              ; 23.696 ns       ; STOP          ; M1   ;
+; N/A   ; None              ; 23.336 ns       ; auto_mode     ; P2m  ;
+; N/A   ; None              ; 23.217 ns       ; sq_1          ; P1m  ;
+; N/A   ; None              ; 23.166 ns       ; semi_mode     ; P1m  ;
+; N/A   ; None              ; 23.004 ns       ; rt_m1         ; M1   ;
+; N/A   ; None              ; 22.872 ns       ; STOP          ; P1m  ;
+; N/A   ; None              ; 22.301 ns       ; ALL_RESET     ; P2m  ;
+; N/A   ; None              ; 22.180 ns       ; rt_m1         ; P1m  ;
+; N/A   ; None              ; 22.072 ns       ; START         ; P1m  ;
+; N/A   ; None              ; 22.057 ns       ; auto_mode     ; P3m  ;
+; N/A   ; None              ; 21.895 ns       ; rt_press      ; P1m  ;
+; N/A   ; None              ; 21.700 ns       ; sq_1          ; P3m  ;
+; N/A   ; None              ; 21.649 ns       ; semi_mode     ; P3m  ;
+; N/A   ; None              ; 21.591 ns       ; ALL_RESET     ; P3m  ;
+; N/A   ; None              ; 21.560 ns       ; auto_mode     ; P1m  ;
+; N/A   ; None              ; 21.454 ns       ; ALL_RESET     ; P1m  ;
+; N/A   ; None              ; 21.390 ns       ; feeding_2     ; em_1 ;
+; N/A   ; None              ; 21.355 ns       ; STOP          ; P3m  ;
+; N/A   ; None              ; 20.845 ns       ; feeding_back  ; em_2 ;
+; N/A   ; None              ; 20.813 ns       ; rt_relay      ; M2   ;
+; N/A   ; None              ; 20.663 ns       ; rt_m1         ; P3m  ;
+; N/A   ; None              ; 20.599 ns       ; rotate_table  ; M1   ;
+; N/A   ; None              ; 20.560 ns       ; manual_mode   ; em_1 ;
+; N/A   ; None              ; 20.555 ns       ; START         ; P3m  ;
+; N/A   ; None              ; 20.548 ns       ; fast_pullback ; em_2 ;
+; N/A   ; None              ; 20.385 ns       ; feeding_1     ; em_1 ;
+; N/A   ; None              ; 20.378 ns       ; rt_press      ; P3m  ;
+; N/A   ; None              ; 20.335 ns       ; fast_supply   ; em_1 ;
+; N/A   ; None              ; 20.232 ns       ; fast_supply   ; em_2 ;
+; N/A   ; None              ; 20.029 ns       ; feeding_1     ; em_2 ;
+; N/A   ; None              ; 19.700 ns       ; rotate_table  ; M2   ;
+; N/A   ; None              ; 18.825 ns       ; manual_mode   ; em_2 ;
+; N/A   ; None              ; 18.076 ns       ; rt_relay      ; P1m  ;
+; N/A   ; None              ; 17.989 ns       ; fast_pullback ; em_3 ;
+; N/A   ; None              ; 17.412 ns       ; rt_relay      ; P2m  ;
+; N/A   ; None              ; 17.344 ns       ; manual_mode   ; em_3 ;
+; N/A   ; None              ; 17.111 ns       ; fast_supply   ; em_3 ;
+; N/A   ; None              ; 16.559 ns       ; rt_relay      ; P3m  ;
+; N/A   ; None              ; 16.469 ns       ; rt_press      ; P2m  ;
+; N/A   ; None              ; 16.337 ns       ; manual_mode   ; M2   ;
+; N/A   ; None              ; 16.020 ns       ; manual_mode   ; M1   ;
+; N/A   ; None              ; 15.270 ns       ; STOP          ; P2m  ;
+; N/A   ; None              ; 14.578 ns       ; rt_m1         ; P2m  ;
++-------+-------------------+-----------------+---------------+------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri May 26 16:13:11 2023
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off kr_r_6 -c kr_r_6 --timing_analysis_only
+Warning: Found combinational loop of 5 nodes
+    Warning: Node "manual_table:inst|rs_trig:inst|inst4~1"
+    Warning: Node "manual_table:inst|rs_trig:inst|inst~0"
+    Warning: Node "manual_table:inst|rs_trig:inst6|inst4"
+    Warning: Node "manual_table:inst|rs_trig:inst6|inst~2"
+    Warning: Node "manual_table:inst|rs_trig:inst6|inst~1"
+Warning: Found combinational loop of 12 nodes
+    Warning: Node "auto_table:inst5|rs_trig:inst11|inst4~2"
+    Warning: Node "auto_table:inst5|rs_trig:inst10|inst4~3"
+    Warning: Node "auto_table:inst5|rs_trig:inst10|inst4"
+    Warning: Node "auto_table:inst5|rs_trig:inst|inst4"
+    Warning: Node "auto_table:inst5|rs_trig:inst|inst~2"
+    Warning: Node "auto_table:inst5|rs_trig:inst10|inst~2"
+    Warning: Node "auto_table:inst5|rs_trig:inst10|inst~3"
+    Warning: Node "auto_table:inst5|rs_trig:inst|inst~1"
+    Warning: Node "auto_table:inst5|rs_trig:inst11|inst"
+    Warning: Node "auto_table:inst5|inst31~0"
+    Warning: Node "auto_table:inst5|rs_trig:inst10|inst~1"
+    Warning: Node "auto_table:inst5|rs_trig:inst11|inst~0"
+Warning: Found combinational loop of 28 nodes
+    Warning: Node "cycle_3:inst1|rs_trig:inst14|inst~5"
+    Warning: Node "cycle_3:inst1|rs_trig:inst13|inst~2"
+    Warning: Node "cycle_3:inst1|rs_trig:inst13|inst~3"
+    Warning: Node "cycle_3:inst1|rs_trig:inst13|inst~4"
+    Warning: Node "cycle_3:inst1|inst28~0"
+    Warning: Node "cycle_3:inst1|rs_trig:inst14|inst4~0"
+    Warning: Node "cycle_3:inst1|rs_trig:inst14|inst4"
+    Warning: Node "cycle_3:inst1|rs_trig:inst13|inst~1"
+    Warning: Node "cycle_3:inst1|rs_trig:inst13|inst4~3"
+    Warning: Node "cycle_3:inst1|inst26~1"
+    Warning: Node "cycle_3:inst1|rs_trig:inst15|inst4~5"
+    Warning: Node "cycle_3:inst1|rs_trig:inst15|inst4~4"
+    Warning: Node "cycle_3:inst1|rs_trig:inst14|inst~1"
+    Warning: Node "cycle_3:inst1|rs_trig:inst14|inst~3"
+    Warning: Node "cycle_3:inst1|rs_trig:inst13|inst4~2"
+    Warning: Node "cycle_3:inst1|rs_trig:inst14|inst~4"
+    Warning: Node "cycle_3:inst1|rs_trig:inst15|inst~1"
+    Warning: Node "cycle_3:inst1|rs_trig:inst13|inst4~1"
+    Warning: Node "cycle_3:inst1|rs_trig:inst|inst"
+    Warning: Node "cycle_3:inst1|rs_trig:inst15|inst4~3"
+    Warning: Node "cycle_3:inst1|inst27~0"
+    Warning: Node "cycle_3:inst1|inst40~0"
+    Warning: Node "cycle_3:inst1|rs_trig:inst|inst4"
+    Warning: Node "cycle_3:inst1|rs_trig:inst14|inst~2"
+    Warning: Node "cycle_3:inst1|inst26~2"
+    Warning: Node "cycle_3:inst1|inst41~0"
+    Warning: Node "cycle_3:inst1|inst17~1"
+    Warning: Node "cycle_3:inst1|inst16~0"
+Warning: Found combinational loop of 27 nodes
+    Warning: Node "cycle_2:inst4|rs_trig:inst|inst"
+    Warning: Node "cycle_2:inst4|rs_trig:inst15|inst4~1"
+    Warning: Node "cycle_2:inst4|rs_trig:inst15|inst4~3"
+    Warning: Node "cycle_2:inst4|rs_trig:inst14|inst~1"
+    Warning: Node "cycle_2:inst4|rs_trig:inst14|inst~2"
+    Warning: Node "cycle_2:inst4|rs_trig:inst14|inst~5"
+    Warning: Node "cycle_2:inst4|inst40~0"
+    Warning: Node "cycle_2:inst4|rs_trig:inst14|inst4~1"
+    Warning: Node "cycle_2:inst4|rs_trig:inst14|inst4~2"
+    Warning: Node "cycle_2:inst4|rs_trig:inst14|inst4~3"
+    Warning: Node "cycle_2:inst4|rs_trig:inst13|inst~2"
+    Warning: Node "cycle_2:inst4|rs_trig:inst13|inst~4"
+    Warning: Node "cycle_2:inst4|inst16~0"
+    Warning: Node "cycle_2:inst4|rs_trig:inst|inst4"
+    Warning: Node "cycle_2:inst4|rs_trig:inst15|inst4~2"
+    Warning: Node "cycle_2:inst4|rs_trig:inst13|inst4~1"
+    Warning: Node "cycle_2:inst4|inst26~0"
+    Warning: Node "cycle_2:inst4|rs_trig:inst14|inst~4"
+    Warning: Node "cycle_2:inst4|inst26"
+    Warning: Node "cycle_2:inst4|rs_trig:inst13|inst4~2"
+    Warning: Node "cycle_2:inst4|rs_trig:inst13|inst4~3"
+    Warning: Node "cycle_2:inst4|rs_trig:inst13|inst~1"
+    Warning: Node "cycle_2:inst4|inst41~0"
+    Warning: Node "cycle_2:inst4|rs_trig:inst15|inst~0"
+    Warning: Node "cycle_2:inst4|inst17"
+    Warning: Node "cycle_2:inst4|rs_trig:inst14|inst~3"
+    Warning: Node "cycle_2:inst4|rs_trig:inst13|inst~3"
+Warning: Found combinational loop of 30 nodes
+    Warning: Node "cycle_1:inst3|rs_trig:inst|inst4"
+    Warning: Node "cycle_1:inst3|rs_trig:inst12|inst4~1"
+    Warning: Node "cycle_1:inst3|rs_trig:inst12|inst4~3"
+    Warning: Node "cycle_1:inst3|inst32~1"
+    Warning: Node "cycle_1:inst3|rs_trig:inst14|inst4~2"
+    Warning: Node "cycle_1:inst3|rs_trig:inst14|inst4"
+    Warning: Node "cycle_1:inst3|rs_trig:inst12|inst4~2"
+    Warning: Node "cycle_1:inst3|rs_trig:inst|inst4~1"
+    Warning: Node "cycle_1:inst3|rs_trig:inst14|inst~1"
+    Warning: Node "cycle_1:inst3|rs_trig:inst14|inst"
+    Warning: Node "cycle_1:inst3|rs_trig:inst13|inst4~5"
+    Warning: Node "cycle_1:inst3|rs_trig:inst13|inst4~3"
+    Warning: Node "cycle_1:inst3|rs_trig:inst13|inst4~4"
+    Warning: Node "cycle_1:inst3|rs_trig:inst13|inst~4"
+    Warning: Node "cycle_1:inst3|rs_trig:inst12|inst~2"
+    Warning: Node "cycle_1:inst3|rs_trig:inst12|inst~3"
+    Warning: Node "cycle_1:inst3|inst16~0"
+    Warning: Node "cycle_1:inst3|inst15~0"
+    Warning: Node "cycle_1:inst3|rs_trig:inst13|inst~2"
+    Warning: Node "cycle_1:inst3|rs_trig:inst13|inst~3"
+    Warning: Node "cycle_1:inst3|rs_trig:inst|inst"
+    Warning: Node "cycle_1:inst3|inst24"
+    Warning: Node "cycle_1:inst3|rs_trig:inst14|inst4~3"
+    Warning: Node "cycle_1:inst3|rs_trig:inst12|inst~1"
+    Warning: Node "cycle_1:inst3|inst16~1"
+    Warning: Node "cycle_1:inst3|inst27~0"
+    Warning: Node "cycle_1:inst3|rs_trig:inst13|inst~1"
+    Warning: Node "cycle_1:inst3|rs_trig:inst13|inst4~2"
+    Warning: Node "cycle_1:inst3|inst24~7"
+    Warning: Node "cycle_1:inst3|rs_trig:inst|inst~1"
+Info: Longest tpd from source pin "ALL_RESET" to destination pin "em_1" is 44.105 ns
+    Info: 1: + IC(0.000 ns) + CELL(0.985 ns) = 0.985 ns; Loc. = PIN_11; Fanout = 56; PIN Node = 'ALL_RESET'
+    Info: 2: + IC(0.000 ns) + CELL(30.431 ns) = 31.416 ns; Loc. = LCCOMB_X18_Y6_N0; Fanout = 2; COMB LOOP Node = 'cycle_1:inst3|inst27~0'
+        Info: Loc. = LCCOMB_X28_Y6_N0; Node "cycle_1:inst3|rs_trig:inst12|inst~1"
+        Info: Loc. = LCCOMB_X26_Y10_N16; Node "cycle_1:inst3|rs_trig:inst13|inst~1"
+        Info: Loc. = LCCOMB_X28_Y6_N4; Node "cycle_1:inst3|rs_trig:inst|inst4~1"
+        Info: Loc. = LCCOMB_X18_Y6_N26; Node "cycle_1:inst3|rs_trig:inst12|inst~3"
+        Info: Loc. = LCCOMB_X18_Y6_N10; Node "cycle_1:inst3|rs_trig:inst13|inst4~2"
+        Info: Loc. = LCCOMB_X28_Y6_N30; Node "cycle_1:inst3|rs_trig:inst12|inst4~1"
+        Info: Loc. = LCCOMB_X26_Y10_N26; Node "cycle_1:inst3|rs_trig:inst13|inst~3"
+        Info: Loc. = LCCOMB_X28_Y6_N2; Node "cycle_1:inst3|rs_trig:inst|inst"
+        Info: Loc. = LCCOMB_X18_Y6_N6; Node "cycle_1:inst3|rs_trig:inst|inst~1"
+        Info: Loc. = LCCOMB_X18_Y6_N16; Node "cycle_1:inst3|inst16~1"
+        Info: Loc. = LCCOMB_X28_Y6_N16; Node "cycle_1:inst3|rs_trig:inst12|inst4~2"
+        Info: Loc. = LCCOMB_X28_Y6_N8; Node "cycle_1:inst3|rs_trig:inst13|inst4~4"
+        Info: Loc. = LCCOMB_X28_Y6_N12; Node "cycle_1:inst3|inst24"
+        Info: Loc. = LCCOMB_X18_Y6_N24; Node "cycle_1:inst3|rs_trig:inst12|inst~2"
+        Info: Loc. = LCCOMB_X18_Y6_N2; Node "cycle_1:inst3|inst32~1"
+        Info: Loc. = LCCOMB_X28_Y6_N6; Node "cycle_1:inst3|rs_trig:inst|inst4"
+        Info: Loc. = LCCOMB_X18_Y6_N30; Node "cycle_1:inst3|rs_trig:inst14|inst~1"
+        Info: Loc. = LCCOMB_X18_Y6_N8; Node "cycle_1:inst3|rs_trig:inst14|inst"
+        Info: Loc. = LCCOMB_X18_Y6_N14; Node "cycle_1:inst3|inst24~7"
+        Info: Loc. = LCCOMB_X18_Y6_N0; Node "cycle_1:inst3|inst27~0"
+        Info: Loc. = LCCOMB_X18_Y6_N28; Node "cycle_1:inst3|inst16~0"
+        Info: Loc. = LCCOMB_X26_Y10_N20; Node "cycle_1:inst3|rs_trig:inst13|inst~4"
+        Info: Loc. = LCCOMB_X24_Y12_N26; Node "cycle_1:inst3|rs_trig:inst13|inst~2"
+        Info: Loc. = LCCOMB_X28_Y6_N18; Node "cycle_1:inst3|rs_trig:inst12|inst4~3"
+        Info: Loc. = LCCOMB_X18_Y6_N4; Node "cycle_1:inst3|rs_trig:inst13|inst4~3"
+        Info: Loc. = LCCOMB_X18_Y6_N12; Node "cycle_1:inst3|rs_trig:inst14|inst4~2"
+        Info: Loc. = LCCOMB_X28_Y6_N22; Node "cycle_1:inst3|rs_trig:inst14|inst4"
+        Info: Loc. = LCCOMB_X28_Y6_N28; Node "cycle_1:inst3|inst15~0"
+        Info: Loc. = LCCOMB_X18_Y6_N20; Node "cycle_1:inst3|rs_trig:inst14|inst4~3"
+        Info: Loc. = LCCOMB_X18_Y6_N18; Node "cycle_1:inst3|rs_trig:inst13|inst4~5"
+    Info: 3: + IC(1.852 ns) + CELL(0.319 ns) = 33.587 ns; Loc. = LCCOMB_X26_Y10_N10; Fanout = 1; COMB Node = 'inst17~3'
+    Info: 4: + IC(0.396 ns) + CELL(0.537 ns) = 34.520 ns; Loc. = LCCOMB_X26_Y10_N4; Fanout = 1; COMB Node = 'inst17~5'
+    Info: 5: + IC(1.425 ns) + CELL(0.615 ns) = 36.560 ns; Loc. = LCCOMB_X24_Y9_N22; Fanout = 1; COMB Node = 'inst17~6'
+    Info: 6: + IC(1.110 ns) + CELL(0.624 ns) = 38.294 ns; Loc. = LCCOMB_X24_Y13_N20; Fanout = 1; COMB Node = 'inst17~7'
+    Info: 7: + IC(2.535 ns) + CELL(3.276 ns) = 44.105 ns; Loc. = PIN_90; Fanout = 0; PIN Node = 'em_1'
+    Info: Total cell delay = 36.787 ns ( 83.41 % )
+    Info: Total interconnect delay = 7.318 ns ( 16.59 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 107 warnings
+    Info: Peak virtual memory: 191 megabytes
+    Info: Processing ended: Fri May 26 16:13:11 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
